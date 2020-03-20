@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <!-- reset.css -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/meyer-reset/2.0/reset.min.css">
+  <!-- 字体图标 -->
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+  <!-- 顶部 -->
+  <div class="nav">
+    <div class="container clearfix">
+      <!-- 向左浮动 -->
+      <div class="nav-left">
+        <!-- logo按钮 -->
+        <a class="logo" href="#">L O G O</a>
+      </div>
+
+      <!-- 向右浮动 -->
+      <div class="nav-right">
+        <!-- 按钮组 -->
+        <ul class="nav-btn-list">
+          <li>
+            <span class="fa fa-cog fa-fw"></span>
+          </li>
+          <li>
+            <span class="fa fa-bell"></span>
+          </li>
+        </ul>
+        <!-- logout按钮 -->
+        <a class="btn-logout" href="#">
+          Log Out
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 内容 -->
+  <div class="content">
+    <div class="container">
+
+      <!-- 内容导航 -->
+      <div class="content-bar">
+        <!-- 标题信息 -->
+        <div class="content-bar-left">
+          <h3>Audience Overview</h3>
+          <h4>Roseville,CA</h4>
+        </div>
+        <!-- 选项 -->
+        <div class="content-bar-right">
+          <ul class="content-bar-list clearfix">
+            <li class="content-bar-active">DASHBOARD</li>
+            <li>PROJECTS</li>
+            <li>CALENDAR</li>
+            <li>MAILBOX</li>
+            <li>SETTINGS</li>
+            <div class="content-bar-hover"></div>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 总览 -->
+      <div class="row">
+        <!-- 轮播图 -->
+        <div class="content-left">
+          <div class="banner">
+            <!-- 轮播图片 -->
+            <ul class="clearfix">
+              <!-- <li> <img src="https://via.placeholder.com/545x267" alt=""> </li>
+              <li> <img src="https://via.placeholder.com/545x267" alt=""> </li>
+              <li> <img src="https://via.placeholder.com/545x267" alt=""> </li>
+              <li> <img src="https://via.placeholder.com/545x267" alt=""> </li>
+              <li> <img src="https://via.placeholder.com/545x267" alt=""> </li>
+              <li> <img src="https://via.placeholder.com/545x267" alt=""> </li> -->
+            </ul>
+
+            <!-- 索引 -->
+            <ol class="clearfix">
+              <li class="banner-index-active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+
+            <!-- 左右箭头 -->
+            <div class="banner-pre"><span class="fa fa-chevron-left"></span></div>
+            <div class="banner-next"><span class="fa fa-chevron-right"></span></div>
+          </div>
+        </div>
+
+        <!-- 数据 -->
+        <div class="content-right">
+          <div class="show-data">
+            <div class="show-title">
+              <span class="show-title-text">Support Request</span>
+              <button class="show-title-all">View All</button>
+            </div>
+
+            <div class="show-detail">
+              <ul class="show-log">
+                <li class="show-log-title">
+                  <div class="show-log-title-time">TIME</div>
+                  <div class="show-log-title-user">USER NAME</div>
+                  <div class="show-log-title-status">STATUS</div>
+                </li>
+                <li>
+                  <div class="show-log-time">9:45pm</div>
+                  <div class="show-log-user">info@design.com</div>
+                  <div class="show-log-status"><span>Solved</span></div>
+                </li>
+                <li>
+                  <div class="show-log-time">9:45pm</div>
+                  <div class="show-log-user">info@design.com</div>
+                  <div class="show-log-status"><span>Solved</span></div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 曲线图 -->
+      <div class="row">
+        <div class="content-single">
+          <h3>曲线图数据展示</h3>
+          <div id="line-chart"></div>
+        </div>
+      </div>
+
+      <!-- 饼状图和柱状图 -->
+      <div class="row">
+        <div class="content-left">
+          <h3>饼状图数据展示</h3>
+          <div id="pie-graph"></div>
+        </div>
+        <div class="content-right">
+          <h3>柱状图数据展示</h3>
+          <div id="bar-chart"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <div class="footer">
+    <div class="container">
+      <!-- logo -->
+      <dl>
+        <dt>
+          <a class="logo" href="#">L O G O</a>
+        </dt>
+      </dl>
+
+      <!-- 选项  -->
+      <dl>
+        <dt>News</dt>
+        <dd>CHANNELS</dd>
+        <dd>OVERVIEW</dd>
+        <dd>TIMELINE</dd>
+      </dl>
+
+      <dl>
+        <dt>SPORT</dt>
+        <dd>CULTURE</dd>
+        <dd>NATURE</dd>
+        <dd>MUSIC</dd>
+      </dl>
+
+      <dl>
+        <dt>FUTURE</dt>
+        <dd>FOOD</dd>
+        <dd>EARTH</dd>
+        <dd>TV</dd>
+      </dl>
+
+      <dl>
+        <dt>TRAVEL</dt>
+        <dd>RADIO</dd>
+      </dl>
+    </div>
+  </div>
+</body>
+
+<!-- 引入jquery -->
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+<!-- 引入 echarts.js -->
+<script src="./js/echarts-en.common.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/banner.js"></script>
+<script src="./js/tab-bar.js"></script>
+
+</html>
